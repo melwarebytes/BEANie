@@ -315,13 +315,194 @@ textarea {
   margin-top: 1.25rem;
   color: var(--coffee-brown);
 }
+
 .article-content p {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
+
 .article-content ul, .article-content ol {
   margin-left: 1.5rem;
 }
+
 .article-content li {
   margin-bottom: 0.25rem;
+}
+
+/* ===============================
+   COFFEE LAB PAGE (Scoped Styles)
+   =============================== */
+
+.coffee-lab-root {
+  background: #f6efe8;
+  min-height: 100vh;
+  color: #2b211a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.coffee-lab-header {
+  padding: 28px 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fffdfb;
+  text-align: center;
+}
+
+.coffee-lab-header .brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6b4c3b;
+}
+
+.coffee-lab-header .tag {
+  font-size: 14px;
+  color: #806b5c;
+  margin-top: 6px;
+}
+
+.coffee-lab-main {
+  display: flex;
+  gap: 24px;
+  padding: 28px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ---------- LEFT (Flavor Wheel) ---------- */
+.coffee-lab-left {
+  flex: 1;
+  min-width: 340px;
+  max-width: 480px;
+}
+
+.coffee-lab-wheel-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(101, 67, 55, 0.08);
+  text-align: center;
+}
+
+.coffee-lab-wheel-card h3 {
+  color: #6b4c3b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.coffee-lab-wheel-legend {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* ---------- RIGHT (Mixer) ---------- */
+.coffee-lab-right {
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.coffee-lab-mixer {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(101, 67, 55, 0.08);
+}
+
+.coffee-lab-mixer h3 {
+  color: #6b4c3b;
+  margin-bottom: 10px;
+}
+
+.coffee-lab-mixer label {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #7a6a5f;
+}
+
+.coffee-lab-mixer select,
+.coffee-lab-mixer input[type="number"],
+.coffee-lab-mixer input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.coffee-lab-small-info {
+  font-size: 12px;
+  color: #7a6a5f;
+  margin-top: 4px;
+}
+
+.coffee-lab-predictions {
+  margin-top: 14px;
+  background: #fdf9f6;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.coffee-lab-predictions h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #5e4032;
+}
+
+.coffee-lab-predictions ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.coffee-lab-muted {
+  color: #9d8f84;
+}
+
+/* ---------- Save Button ---------- */
+.coffee-lab-actions {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.coffee-lab-save {
+  background: #6b4c3b;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.25s;
+}
+
+.coffee-lab-save:hover {
+  background: #523a2b;
+}
+
+/* ---------- Footer ---------- */
+.coffee-lab-foot {
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: #7a6a5f;
+  margin-top: auto;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .coffee-lab-right {
+    width: 100%;
+  }
+  .coffee-lab-main {
+    flex-direction: column;
+    align-items: center;
+  }
 }
