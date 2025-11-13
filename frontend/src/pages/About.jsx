@@ -7,7 +7,7 @@ export default function About(){
       <h1>About BEANie</h1>
       <Card>
         <p className="small">BEANie is a curated coffee resource for home brewers and professionals. We collect bean profiles, brewing guides and experiments to help you make better coffee.</p>
-        <p className="small">Built with care — coffee-first design and minimal UI.</p>
+        <p className="small">Built with care — coffee-first</p>
       </Card>
     </div>
   )
