@@ -12,7 +12,7 @@ function runScript(name) {
 async function run() {
   try {
     await runScript('seed-users.js')
-    await runScript('seed-blogs.js')
+    await runScript('seed-full-blogs.js')
     await runScript('seed-encyclopedia.js')
     console.log('All seeds complete')
     process.exit(0)
